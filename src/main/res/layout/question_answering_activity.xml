@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/mountains"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:theme="@style/Theme.AppCompat">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/submitAnswerButton"
+        android:typeface="serif"
+        android:background="#15436c"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/questionTopic"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size"
+        android:typeface="serif" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/readyAnswers" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/readyAnswersLayout">
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroup"></RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

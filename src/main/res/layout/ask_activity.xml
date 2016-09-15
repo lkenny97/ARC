@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/mountains"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="3"
+                android:columnCount="3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:weightSum="1">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SEE THE GRAPH"
+                        android:id="@+id/stopQuestion"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal|top"
+                        android:visibility="gone"
+                        android:layout_weight="0.08" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="0"></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="0"></TableRow>
+
+            </GridLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE QUESTION"
+                android:id="@+id/createQuestion"
+                android:background="#15436c"
+                android:textColor="#ffffff"
+                android:clickable="true"
+                android:typeface="serif"
+                style="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:id="@+id/enterQuestion"
+                android:hint="Enter the question"
+                android:textColorHint="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD "
+                    android:id="@+id/addAnswerButton"
+                    android:singleLine="false"
+                    android:textColor="#FFFFFF"
+                    android:background="#15436c"
+                    android:typeface="serif"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="OR"
+                    android:id="@+id/textView2"
+                    android:textColor="#82ffffff"
+                    android:layout_marginTop="3dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="REMOVE "
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/deleteAnswerButton"
+                    android:background="#15436c"
+                    android:typeface="serif"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+                android:fillViewport="false"
+                android:layout_weight="0.64">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/answersLayout">
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

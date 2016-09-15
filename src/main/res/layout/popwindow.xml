@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wall">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOW CHART"
+            android:typeface="serif"
+            android:textColor="#ff5900"
+            android:id="@+id/stopTimer"
+            android:background="#620659"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/abc_action_bar_progress_bar_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@android:style/TextAppearance.Large"
+            android:textSize="50dp"
+            android:textColor="#FF8000"
+            android:typeface="serif"
+            android:id="@+id/textView"
+            android:layout_marginTop="98dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/stopTimer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chronometer"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="@dimen/abc_action_bar_stacked_max_height"
+                android:typeface="serif"
+                android:textColor="#ffee02" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/questionId"
+            android:layout_marginTop="67dp"
+            android:layout_below="@+id/stopTimer"
+            android:layout_centerHorizontal="true"
+            android:textColor="#00d4ff"
+            android:textSize="@dimen/abc_action_bar_progress_bar_size"
+            android:typeface="serif" />
+
+    </RelativeLayout>
+</LinearLayout>

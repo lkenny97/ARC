@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/mountains"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@mipmap/newlogo"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTER ID:"
+                android:id="@+id/enterIdLabel"
+                android:textSize="@dimen/abc_action_bar_progress_bar_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#458d8c"
+                android:typeface="serif" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enterIdField"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="195dp"
+                android:layout_height="50dp"
+                android:id="@+id/goButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.05"
+                android:allowUndo="false"
+                android:clickable="true"
+                android:text="ENTER"
+                android:textColor="#FFFFFF"
+                android:typeface="serif"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                style="@style/Theme.AppCompat.DayNight.Dialog"
+                android:background="#15436c" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
